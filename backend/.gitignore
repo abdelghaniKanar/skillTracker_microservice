@@ -2,7 +2,3 @@ node_modules/
 .env
 dist/
 build/
-dbConfig.js
-competence.controller.js
-validation.js
-competence.route.js
