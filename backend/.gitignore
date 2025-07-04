@@ -1,0 +1,9 @@
+node_modules/
+.env
+dist/
+build/
+dbConfig.js
+competence.controller.js
+validation.js
+Competence.js
+competence.route.js
