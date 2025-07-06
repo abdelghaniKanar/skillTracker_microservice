@@ -1,24 +1,19 @@
 const mongoose = require("mongoose");
 
-const SubCompetenceSchema = new mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: true,
-    },
-    validated: {
-      type: Boolean,
-    },
-    importance: {
-      type: String,
-      enum: ["High", "Normal", "Low"],
-      required: true,
-    },
+const SubCompetenceSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
   },
-  {
-    _id: false,
-  }
-);
+  validated: {
+    type: Boolean,
+  },
+  importance: {
+    type: String,
+    enum: ["High", "Normal", "Low"],
+    required: true,
+  },
+});
 
 const competenceSchema = new mongoose.Schema({
   code: {
